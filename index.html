@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NyckCripto</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <header id="home">
+      <div class="logo">
+        <img src="./img/logo.JPG" alt="" />
+      </div>
+      <h1 class="tituls1">Cripto</h1>
+      <h1 class="tituls2">grafia</h1>
+    </header>
+
+    <main>
+      <form>
+        <section id="box1">
+          <h3 id="titulo1">Digite a mensaguem</h3>
+          <h4 id="text1">Escolha a Cripitografia</h4>
+          <br />
+
+          <input id="cesar" type="radio" name="opcao" value="cifradecesar"checked />
+          <label for="base64">Cifra de Cesar</label>
+          <input id="base64" type="radio" name="opcao" value="base64" />
+          <label for="base64">Base64</label>
+
+          <section>
+            <br />
+            <label for="Resultado">Mensagem:</label>
+            <br />
+            <br />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              cols="40"
+              rows="7"
+              class="caixa"
+              placeholder="Digite a sua mensagem..."
+            ></textarea>
+          </section>
+          <br />
+          <section id="incrementar">
+            <label for="incrementar">Incremento:</label>
+            <input
+              type="number"
+              id="incrementacao"
+              value="1"
+              name="incrementar"
+              class="caixa-2"
+            />
+          </section>
+          <br />
+          <section>
+            <input
+              type="radio"
+              id="codificar"
+              name="opcao2"
+              onclick="trocaTexto ()"
+              checked
+            />
+            <label for="codificar">Codificar</label>
+            <input
+              type="radio"
+              id="decodificar"
+              name="opcao2"
+              onclick="trocaTexto ()"
+            />
+            <label for="decodificar">Decodificar</label>
+          </section>
+
+          <br />
+          <button id="botao" class="botao-estilo">Codificar</button>
+        </section>
+
+        <br />
+        <br />
+        <section id="boxs2">
+          <div id="result" class="result">
+            <h3 id="titulo2">Resultado:</h3>
+            <br />
+            <textarea
+              name="resultado"
+              id="resultado"
+              cols="40"
+              rows="6"
+              class="caixa"
+              placeholder="Mensagem cifrada/decifrada aparecerá aqui"
+            ></textarea>
+          </div>
+        </section>
+        <div class="rodape">
+          <button id="limpar" class="botao-estilo">Limpar tudo</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
